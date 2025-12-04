@@ -12,31 +12,47 @@
             /* very light medical blue */
             color: #1a1a1a;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
-            text-align: center;
-            padding: 0 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px 36px;
+            max-width: 560px;
+            width: 100%;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            text-align: left;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: 0.5rem;
             font-weight: 600;
+            text-align: center;
         }
 
-        p {
+        .tagline {
             font-size: 1.1rem;
+            text-align: center;
             opacity: 0.8;
-            margin-top: 0.5rem;
+            margin-bottom: 1.6rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 1.8rem;
+            line-height: 1.45;
         }
 
         a {
             color: #1a1a1a;
-            text-decoration: none;
             font-weight: 500;
+            text-decoration: none;
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
             padding-bottom: 2px;
             transition: 0.2s;
@@ -45,15 +61,31 @@
         a:hover {
             border-bottom: 1px solid rgba(0, 0, 0, 0.6);
         }
+
+        .contact {
+            text-align: center;
+            margin-top: 1rem;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Streamlined Hospital at Home</h1>
-    <p>
-        Contact:
-        <a href="mailto:founders@bedflowhealth.com">Founders@bedflowhealth.com</a>
-    </p>
+    <div class="card">
+        <h1>Bedflow Health</h1>
+        <div class="tagline">Streamlined Hospital-at-Home Operations</div>
+
+        <ul>
+            <li>Identify eligible candidates in real time using ED and inpatient census data.</li>
+            <li>Coordinate across internal and external stakeholders to minimize lag time and ensure protocol alignment.
+            </li>
+            <li>Track outcomes and financial impact to demonstrate both near-term and long-term program efficacy.</li>
+        </ul>
+
+        <div class="contact">
+            <p>Contact us:</p>
+            <a href="mailto:Founders@bedflowhealth.com">Founders@bedflowhealth.com</a>
+        </div>
+    </div>
 </body>
 
 </html>
